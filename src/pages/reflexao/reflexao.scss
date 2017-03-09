@@ -1,0 +1,22 @@
+page-reflexao {
+    .card-reflexao {
+        $card-md-margin-top: 100px;
+        $button-md-margin: 0.4rem 17.2rem;
+        ion-card {
+            position: relative;
+            text-align: center;
+            margin-top: 5rem;
+            ion-card-header {
+                color: #EEEEEE;
+                font-size: 3rem;
+            }
+            ion-card-content {
+                color: #EEEEEE;
+                font-size: 2rem;
+            }
+        }
+        button {
+            margin: 10.4rem 19rem;
+        }
+    }
+}

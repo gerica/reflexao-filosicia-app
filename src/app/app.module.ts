@@ -1,3 +1,5 @@
+import { HomePage } from './../pages/home/home';
+import { ReflexaoPage } from './../pages/reflexao/reflexao';
 import { LoginPage } from './../pages/login/login';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -10,7 +12,9 @@ import { Page2 } from '../pages/page2/page2';
     MyApp,
     Page1,
     Page2,
-    LoginPage
+    LoginPage,
+    ReflexaoPage,
+    HomePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,7 +24,9 @@ import { Page2 } from '../pages/page2/page2';
     MyApp,
     Page1,
     Page2,
-    LoginPage
+    LoginPage,
+    ReflexaoPage,
+    HomePage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
