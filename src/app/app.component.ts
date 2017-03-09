@@ -1,6 +1,6 @@
+import { SobrePage } from './../pages/sobre/sobre';
 import { HomePage } from './../pages/home/home';
 import { ReflexaoPage } from './../pages/reflexao/reflexao';
-import { LoginPage } from './../pages/login/login';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
@@ -22,9 +22,7 @@ export class MyApp {
     this.pages = [
       { title: 'Pensar', component: HomePage },
       { title: 'Reflexão', component: ReflexaoPage },
-      { title: 'Login', component: LoginPage }
-      // { title: 'Page One', component: Page1 },
-      // { title: 'Page Two', component: Page2 },
+      { title: 'Sobre', component: SobrePage }      
     ];
 
   }

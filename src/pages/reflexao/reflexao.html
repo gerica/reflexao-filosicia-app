@@ -11,13 +11,15 @@
 <ion-content class="card-reflexao">
   <ion-card>
     <ion-card-header text-center>
-      Header
+      {{reflexao?.titulo}}
     </ion-card-header>
     <ion-card-content text-center>
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+      {{reflexao?.conteudo}}
     </ion-card-content>
   </ion-card>
-  <button ion-button only-icon text-center color="light">
+  <span class="autor">{{reflexao?.autorNome}}</span>
+  <br><br>
+  <button ion-button only-icon text-center color="light" (click)="getReflexao()">
     <ion-icon name="arrow-dropright"></ion-icon>
   </button>
 </ion-content>

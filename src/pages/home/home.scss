@@ -20,11 +20,13 @@ page-home {
             color: #fff;
         }
         button {
-            margin: 10.4rem 19rem;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
-    $card-md-font-size: 2.0rem;
-    $card-md-header-color: #eeeeee;
-    $card-md-margin-top: 200px;
-    $button-md-margin:10.4rem 17.2rem;    
+    // $card-md-font-size: 2.0rem;
+    // $card-md-header-color: #eeeeee;
+    // $card-md-margin-top: 200px;
+    // $button-md-margin:10.4rem 17.2rem;
 }

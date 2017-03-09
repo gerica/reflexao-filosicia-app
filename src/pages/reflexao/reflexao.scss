@@ -1,11 +1,13 @@
 page-reflexao {
     .card-reflexao {
-        $card-md-margin-top: 100px;
-        $button-md-margin: 0.4rem 17.2rem;
+        // $card-md-margin-top: 100px;
+        // $button-md-margin: 0.4rem 17.2rem;
         ion-card {
             position: relative;
             text-align: center;
             margin-top: 5rem;
+            box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.14), 0 3px 1px -2px rgba(255, 255, 255, 0.2), 0 1px 5px 0 rgba(255, 255, 255, 0.12);
+            
             ion-card-header {
                 color: #EEEEEE;
                 font-size: 3rem;
@@ -16,7 +18,16 @@ page-reflexao {
             }
         }
         button {
-            margin: 10.4rem 19rem;
+            // margin: 10.4rem 19rem;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .autor {
+            color: #EEEEEE;
+            position: absolute;
+            right: 1rem;
+            /* must be equal to parent's right padding */
         }
     }
 }

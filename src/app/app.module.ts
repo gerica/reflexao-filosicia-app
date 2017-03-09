@@ -1,33 +1,40 @@
+import { SobrePage } from './../pages/sobre/sobre';
+import { ReflexaoService } from './../services/reflexao.service';
 import { HomePage } from './../pages/home/home';
 import { ReflexaoPage } from './../pages/reflexao/reflexao';
-import { LoginPage } from './../pages/login/login';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { AngularFireModule } from 'angularfire2';
 import { MyApp } from './app.component';
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
+import { AutorService } from "../services/autor.service";
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyDZFCSxIsR-5nRpvsd6DjwfysBeRNyEf1A",
+  authDomain: "reflexao-filosofica.firebaseapp.com",
+  databaseURL: "https://reflexao-filosofica.firebaseio.com",
+  messagingSenderId: "405105317374"
+};
 
 @NgModule({
   declarations: [
     MyApp,
-    Page1,
-    Page2,
-    LoginPage,
     ReflexaoPage,
-    HomePage
+    HomePage,
+    SobrePage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Page1,
-    Page2,
-    LoginPage,
     ReflexaoPage,
-    HomePage
+    HomePage,
+    SobrePage
   ],
-  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
+  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler },
+    ReflexaoService,
+    AutorService]
 })
 export class AppModule { }

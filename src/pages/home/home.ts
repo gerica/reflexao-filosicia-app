@@ -1,6 +1,6 @@
 import { ReflexaoPage } from './../reflexao/reflexao';
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController} from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
